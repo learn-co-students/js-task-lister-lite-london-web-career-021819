@@ -109,6 +109,7 @@ function sortByPriority(){
     sortedList.reverse()
   }
 
+  //append each li elements from the sorteList array to the tasks list (listEl)
   sortedList.forEach(li => {
     listEl.appendChild(li)
   })
