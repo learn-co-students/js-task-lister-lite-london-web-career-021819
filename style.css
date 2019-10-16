@@ -1,15 +1,16 @@
 html {
   height: 100%;
   width: 100%;
-  font-family: "arial", sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
 body {
   min-height: 100%;
   min-width: 100%;
   background: linear-gradient(white, skyblue);
-  background-image: url("https://cdn4.vectorstock.com/i/1000x1000/83/43/notebook-page-vector-1848343.jpg");
-  background-color: #cccccc;
+  background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/notebook-paper-background-design-template-c114c2ed2104bd8b815cf7fbb2f34f44_screen.jpg?ts=1566601599"); 
+  background-size: 100%;
+  background-repeat: no-repeat; 
 
 }
 
@@ -23,14 +24,14 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.3);
   padding: 50px 20px 18px 18px;
+
 
 }
 
 .todo {
   line-height: 1.9;
-  font-size: 25px;
+  font-size: 20px;
   text-align: centre;
 
 }
@@ -39,5 +40,5 @@ button {
 
 #tasks {
   text-align: centre;
-  font-size: 25px;
+  font-size: 20px;
 }

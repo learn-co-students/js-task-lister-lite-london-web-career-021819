@@ -3,20 +3,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const listEl = document.querySelector('#tasks')
 
   // add a single task
-  function addTask (text) {
-  	// 	create LI
-  	const todoEl = document.createElement('li')
+  function addTask(text, name) {
+    debugger
+    // 	create LI
+    const todoEl = document.createElement('div')
     //  create button
     const btn = document.createElement("button");
     btn.innerHTML = "X";
     btn.className = "delete"
+    
+    //  add the text to the div
+    const taskText = document.createElement('li')
+    taskText.innerText = `${text}: ${name}`
+    todoEl.className = 'todo'
 
-  	//  add the text to the LI
-  	todoEl.innerText = text
-  	todoEl.className = 'todo'
-    //  append button to the LI
-    todoEl.appendChild(btn);
-  	//  append LI to list
+    //  append text, name and button to the LI
+    taskText.append(btn)
+    todoEl.append(taskText)
+    //  append LI to list
     listEl.appendChild(todoEl)
 
   }
@@ -24,16 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // listen to form submission
 
   formEl.addEventListener('submit', (event) => {
-  event.preventDefault()
-  const text = formEl.text.value
-  addTask(text)
-  formEl.reset()
+    debugger
+    event.preventDefault()
+    const text = formEl.task.value
+    const name = formEl.person.value
+    addTask(text, name)
+    formEl.reset()
   })
 
   document.addEventListener('click', (event) => {
-  if (event.target.className === 'delete') {
-    event.target.parentElement.remove()
-  }
+    if (event.target.className === 'delete') {
+      event.target.parentElement.remove()
+    }
 
   })
 
