@@ -2,43 +2,23 @@
   "chores": [
     {
       "text": "drink tea",
-      "name": "charl",
-      "id": 1
+      "name": "Jo",
+      "id": 13
     },
     {
-      "text": "drink tea",
-      "name": "charl",
-      "id": 2
+      "text": "eat biscuits",
+      "name": "Charly",
+      "id": 14
     },
     {
-      "text": "drink tea",
-      "name": "charl",
-      "id": 3
+      "text": "washing up",
+      "name": "Mani",
+      "id": 15
     },
     {
-      "text": "drink tea",
-      "name": "charl",
-      "id": 4
-    },
-    {
-      "text": "drink tea",
-      "name": "charl",
-      "id": 5
-    },
-    {
-      "text": "drink tea",
-      "name": "charl",
-      "id": 6
-    },
-    {
-      "text": "drink tea",
-      "name": "charl",
-      "id": 7
-    },
-    {
-      "text": "drink tea",
-      "name": "charl",
-      "id": 8
+      "text": "go nap ",
+      "name": "Ian",
+      "id": 16
     }
   ]
 }

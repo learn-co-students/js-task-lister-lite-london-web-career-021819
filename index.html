@@ -1,22 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>House Chores</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <div id="main-content">
     <h1>Do These Things!</h1>
 
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
-      <input required name ="task" type="text" id="new-task-description" name="new-task-description" placeholder="description">
-
+      <input required name="task" type="text" id="new-task-description" name="new-task-description"
+        placeholder="description">
       <label for="new-task-description">Who should do it?:</label>
-      <input required name ="person" type="text" id="task-doer" name="task-doer" placeholder="who?">
+      <input required name="person" type="text" id="task-doer" name="task-doer" placeholder="who?">
       <input type="submit" value="Create New Task">
-
     </form>
 
     <div id="list">
@@ -24,9 +25,8 @@
       <ul id="tasks">
       </ul>
     </div>
-
     <script src="./src/index.js"></script>
   </div>
-
 </body>
+
 </html>

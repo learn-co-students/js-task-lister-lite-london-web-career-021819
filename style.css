@@ -10,7 +10,6 @@ body {
   background: linear-gradient(white, skyblue);
   background-size: 100%;
   background-repeat: no-repeat; 
-
 }
 
 button {
@@ -25,16 +24,12 @@ button {
   flex-direction: column;
   padding: 50px 20px 18px 18px;
 }
-
 .todo {
   line-height: 2.5;
   font-size: 24px;
   text-align: left;
 
 }
-
-
-
 #tasks {
   text-align: left;
   font-size: 24 px;
