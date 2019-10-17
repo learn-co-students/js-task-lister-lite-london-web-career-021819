@@ -8,7 +8,6 @@ body {
   min-height: 100%;
   min-width: 100%;
   background: linear-gradient(white, skyblue);
-  background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/notebook-paper-background-design-template-c114c2ed2104bd8b815cf7fbb2f34f44_screen.jpg?ts=1566601599"); 
   background-size: 100%;
   background-repeat: no-repeat; 
 
@@ -22,23 +21,21 @@ button {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   padding: 50px 20px 18px 18px;
-
-
 }
 
 .todo {
   line-height: 2.5;
   font-size: 24px;
-  text-align: center;
+  text-align: left;
 
 }
 
 
 
 #tasks {
-  text-align: center;
+  text-align: left;
   font-size: 24 px;
 }

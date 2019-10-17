@@ -4,8 +4,8 @@
 function get(url) {
   return fetch(url).then(resp => resp.json())
 }
-function post(url, id, data) { 
-  return fetch(`${url}${id}`,
+function post(url, data) {
+  return fetch(url,
     {
       method: 'POST',
       headers: apiHeaders,
@@ -14,15 +14,15 @@ function post(url, id, data) {
   )
 }
 
-function destroy(url, id) {
-  return fetch(`${url}${id}`).then(resp => resp.json())
+function destroy(url) {
+  return fetch(url).then(resp => resp.json())
 }
 
-const API = { get, destroy }
-const apiHeaders
- = {
-    "Content-Type": "application/json",
-    Accept: "application/json"
+const API = { get, destroy, post }
+const apiHeaders
+  = {
+  "Content-Type": "application/json",
+  Accept: "application/json"
 }
 const choresUrl = "http://localhost:3000/chores/"
 const formEl = document.querySelector('#create-task-form')
@@ -64,8 +64,9 @@ formEl.addEventListener('submit', (event) => {
     text: formEl.task.value,
     name: formEl.person.value
   }
-  API.post()
-  appendTask(taskObj)
+  API.post(choresUrl, taskObj).then(
+    appendTask(taskObj)
+  )
   formEl.reset()
 })
 

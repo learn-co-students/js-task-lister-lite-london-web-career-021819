@@ -1,3 +1,44 @@
 {
-    "chores": []
+  "chores": [
+    {
+      "text": "drink tea",
+      "name": "charl",
+      "id": 1
+    },
+    {
+      "text": "drink tea",
+      "name": "charl",
+      "id": 2
+    },
+    {
+      "text": "drink tea",
+      "name": "charl",
+      "id": 3
+    },
+    {
+      "text": "drink tea",
+      "name": "charl",
+      "id": 4
+    },
+    {
+      "text": "drink tea",
+      "name": "charl",
+      "id": 5
+    },
+    {
+      "text": "drink tea",
+      "name": "charl",
+      "id": 6
+    },
+    {
+      "text": "drink tea",
+      "name": "charl",
+      "id": 7
+    },
+    {
+      "text": "drink tea",
+      "name": "charl",
+      "id": 8
+    }
+  ]
 }
