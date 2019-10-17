@@ -1,24 +1,3 @@
 {
-  "chores": [
-    {
-      "text": "drink tea",
-      "name": "Jo",
-      "id": 13
-    },
-    {
-      "text": "eat biscuits",
-      "name": "Charly",
-      "id": 14
-    },
-    {
-      "text": "washing up",
-      "name": "Mani",
-      "id": 15
-    },
-    {
-      "text": "go nap ",
-      "name": "Ian",
-      "id": 16
-    }
-  ]
+  "chores": []
 }

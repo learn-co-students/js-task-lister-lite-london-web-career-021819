@@ -15,7 +15,12 @@ function post(url, data) {
 }
 
 function destroy(url) {
-  return fetch(url).then(resp => resp.json())
+  // debugger
+  return fetch(url,
+    {
+      method: 'DELETE'
+    }
+  ).then(resp => resp.json())
 }
 
 const API = { get, destroy, post }
@@ -38,31 +43,29 @@ function getAllTasks() {
 // add a single task
 function appendTask(task) {
   // 	create LI
-  const todoEl = document.createElement('div')
+  const todoEl = document.createElement('li')
   //  create button
   const btn = document.createElement("button");
   btn.innerHTML = "X";
   btn.className = "delete"
 
   //  add the text to the div
-  const taskText = document.createElement('li')
-  taskText.innerText = `${task.text}: ${task.name}`
+  todoEl.innerText = `${task.text}: ${task.name}`
   todoEl.className = 'todo'
+  todoEl.id = task.id
 
   //  append text, name and button to the LI
-  taskText.append(btn)
-  todoEl.append(taskText)
+  todoEl.append(btn)
   //  append LI to list
   listEl.appendChild(todoEl)
 }
 
 // listen to form submission
-
-formEl.addEventListener('submit', (event) => {
-  event.preventDefault()
+formEl.addEventListener('submit', () => {
+  debugger
   const taskObj = {
-    text: formEl.task.value,
-    name: formEl.person.value
+    text: formEl.task,
+    name: formEl.person
   }
   API.post(choresUrl, taskObj).then(
     appendTask(taskObj)
@@ -70,8 +73,11 @@ formEl.addEventListener('submit', (event) => {
   formEl.reset()
 })
 
+
+
 document.addEventListener('click', (event) => {
   if (event.target.className === 'delete') {
+    API.destroy(`${choresUrl}${event.target.parentElement.id}`)
     event.target.parentElement.remove()
   }
 })
