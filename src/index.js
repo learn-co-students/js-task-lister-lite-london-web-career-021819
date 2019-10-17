@@ -15,7 +15,6 @@ function post(url, data) {
 }
 
 function destroy(url) {
-  // debugger
   return fetch(url,
     {
       method: 'DELETE'
@@ -62,7 +61,7 @@ function appendTask(task) {
 
 // listen to form submission
 formEl.addEventListener('submit', () => {
-  debugger
+  event.preventDefault()
   const taskObj = {
     text: formEl.task,
     name: formEl.person
